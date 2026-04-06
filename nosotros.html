@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>envios.com</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+
+
+
+
+    <!-- SECCIÓN ESPECIALES -->
+    <section class="especiales container text-center">
+        <h2 class="section-title">¿Qué nos hace especiales?</h2>
+
+        <div class="row icons-row">
+            <div class="col-sm-3">
+                <div class="icon"><img src="https://envios.com/lib/images/features/support.png" alt=""></div>
+                <p>Atención personalizada</p>
+            </div>
+            <div class="col-sm-3">
+                <div class="icon"><img src="https://envios.com/lib/images/features/exchange.png" alt=""></div>
+                <p>Mejor tipo de cambio</p>
+            </div>
+            <div class="col-sm-3">
+                <div class="icon"><img src="https://envios.com/lib/images/features/fast1.png" alt=""></div>
+                <p>Envíos en minutos</p>
+            </div>
+            <div class="col-sm-3">
+                <div class="icon"><img src="https://envios.com/lib/images/features/secure1.png" alt=""></div>
+                <p>Seguridad y confianza</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOQUE AZUL -->
+    <section class="blue-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- MENU -->
+                <!-- MENU -->
+                <div class="col-sm-4 left-menu">
+                    <ul>
+                        <li class="active" data-content="mision">Nuestra Misión</li>
+                        <li data-content="vision">Nuestra Visión</li>
+                        <li data-content="compromiso">Nuestro Compromiso</li>
+                    </ul>
+                </div>
+
+                <!-- TEXTO -->
+                <div class="col-sm-8 right-content">
+                    <h2 id="titulo">Tu envio esta 100% garantizado o te devolvemos tu dinero</h2>
+                    <p id="texto">
+                        Operamos bajo la pesquisia de que “el cliente siempre es primero”. Y recuerde, su envió esta 100% Garantizado o le devolvemos su dinero.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ALIANZAS -->
+    <section class="alianzas text-center">
+        <div class="container">
+
+            <h2 class="section-title">Alianzas</h2>
+            <p class="alianzas-text">
+                Trabajamos día con día para ofrecerte el mejor servicio. Nuestras alianzas son prueba de ello, tenemos los mejores aliados para ofrecerte seguridad y confianza que te mereces.
+            </p>
+
+            <!-- CAROUSEL -->
+            <div id="alianzasCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="item active">
+                        <div class="row logos">
+                            <div class="col-sm-3"><img src="img/logo1.png" class="img-responsive center-block"></div>
+                            <div class="col-sm-3"><img src="img/logo2.png" class="img-responsive center-block"></div>
+                            <div class="col-sm-3"><img src="img/logo3.png" class="img-responsive center-block"></div>
+                            <div class="col-sm-3"><img src="img/logo4.png" class="img-responsive center-block"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Controles -->
+                <a class="left carousel-control" href="#alianzasCarousel" data-slide="prev">
+                ‹
+            </a>
+                <a class="right carousel-control" href="#alianzasCarousel" data-slide="next">
+                ›
+            </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="section-lg text-center" style="background-color: rgba(145, 191, 255, 0.15);">
+
+        <div class="container">
+
+            <div class="row justify-content-center align-items-center g-4">
+
+                <!-- TEXTO -->
+                <div class="col-md-5 text-md-start text-center">
+                    <p class="mb-1 fw-semibold fs-2" style="color: #5292FF;">
+                        ¿Listo para enviar dinero?
+                    </p>
+                    <p class="mb-0 text-muted fs-4 text-blue">
+                        Crea una cuenta ó contáctanos.
+                    </p>
+                </div>
+
+                <!-- BOTONES -->
+                <div class="col-md-5 text-md-end text-center">
+                    <button class="btn btn-primary-custom me-2">
+          CREA TU CUENTA
+        </button>
+                    <button class="btn btn-outline-primary-custom">
+          CONTÁCTANOS
+        </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div id="footer"></div>
+    <script src="js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js "></script>
+</body>
+
+<script>
+    const swiper = new Swiper(".mySwiper ", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next ",
+            prevEl: ".swiper-button-prev ",
+        },
+    });
+
+
+
+    const data = {
+        mision: {
+            titulo: "Tu envio esta 100% garantizado o te devolvemos tu dinero",
+            texto: "Operamos bajo la pesquisia de que “el cliente siempre es primero”. Y recuerde, su envió esta 100% Garantizado o le devolvemos su dinero."
+        },
+        vision: {
+            titulo: "Ser líderes en envíos de dinero",
+            texto: "Convertirnos en la plataforma número uno en transferencias internacionales, destacando por innovación y confianza."
+        },
+        compromiso: {
+            titulo: "Comprometidos contigo",
+            texto: "Brindar seguridad, rapidez y atención personalizada en cada envío que realizas con nosotros."
+        }
+    };
+
+    const items = document.querySelectorAll(".left-menu li");
+    const titulo = document.getElementById("titulo");
+    const texto = document.getElementById("texto");
+
+    items.forEach(item => {
+        item.addEventListener("click", () => {
+
+            // quitar active
+            items.forEach(i => i.classList.remove("active"));
+
+            // agregar active
+            item.classList.add("active");
+
+            // cambiar contenido
+            const key = item.getAttribute("data-content");
+            titulo.textContent = data[key].titulo;
+            texto.textContent = data[key].texto;
+        });
+    });
+</script>
+
+</html>

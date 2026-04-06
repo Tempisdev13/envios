@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>envios.com</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+
+
+
+
+    <section class="contact-section">
+        <div class="container">
+
+            <h2 class="section-title text-center">
+                ¿Te gustaría enviarnos un mensaje?
+            </h2>
+
+            <div class="contact-box">
+
+                <form>
+
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                        <label class="form-label">Nombre(s):</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="mb-3">
+                        <label class="form-label">Teléfono:</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label class="form-label">E-mail:</label>
+                        <input type="email" class="form-control">
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje:</label>
+                        <textarea class="form-control textarea"></textarea>
+                    </div>
+
+                    <!-- RECAPTCHA (placeholder) -->
+                    <div class="mb-4">
+                        <div class="recaptcha-box">
+                            <input type="checkbox"> No soy un robot
+                        </div>
+                    </div>
+
+                    <!-- Botón -->
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-send">
+                        Enviar
+                    </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section-lg text-center" style="background-color: rgba(145, 191, 255, 0.15);">
+
+        <div class="container">
+
+            <div class="row justify-content-center align-items-center g-4">
+
+                <!-- TEXTO -->
+                <div class="col-md-5 text-md-start text-center">
+                    <p class="mb-1 fw-semibold fs-2" style="color: #5292FF;">
+                        ¿Listo para enviar dinero?
+                    </p>
+                    <p class="mb-0 text-muted fs-4 text-blue">
+                        Crea una cuenta ó contáctanos.
+                    </p>
+                </div>
+
+                <!-- BOTONES -->
+                <div class="col-md-5 text-md-end text-center">
+                    <button class="btn btn-primary-custom me-2">
+          CREA TU CUENTA
+        </button>
+                    <button class="btn btn-outline-primary-custom">
+          CONTÁCTANOS
+        </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div id="footer"></div>
+    <script src="js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js "></script>
+</body>
+
+<script>
+    const swiper = new Swiper(".mySwiper ", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next ",
+            prevEl: ".swiper-button-prev ",
+        },
+    });
+
+
+
+    const data = {
+        mision: {
+            titulo: "Tu envio esta 100% garantizado o te devolvemos tu dinero",
+            texto: "Operamos bajo la pesquisia de que “el cliente siempre es primero”. Y recuerde, su envió esta 100% Garantizado o le devolvemos su dinero."
+        },
+        vision: {
+            titulo: "Ser líderes en envíos de dinero",
+            texto: "Convertirnos en la plataforma número uno en transferencias internacionales, destacando por innovación y confianza."
+        },
+        compromiso: {
+            titulo: "Comprometidos contigo",
+            texto: "Brindar seguridad, rapidez y atención personalizada en cada envío que realizas con nosotros."
+        }
+    };
+
+    const items = document.querySelectorAll(".left-menu li");
+    const titulo = document.getElementById("titulo");
+    const texto = document.getElementById("texto");
+
+    items.forEach(item => {
+        item.addEventListener("click", () => {
+
+            // quitar active
+            items.forEach(i => i.classList.remove("active"));
+
+            // agregar active
+            item.classList.add("active");
+
+            // cambiar contenido
+            const key = item.getAttribute("data-content");
+            titulo.textContent = data[key].titulo;
+            texto.textContent = data[key].texto;
+        });
+    });
+</script>
+
+</html>
