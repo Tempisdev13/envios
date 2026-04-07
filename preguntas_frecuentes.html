@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQ Envíos</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        background-color: #f3f3f3;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Títulos */
+      .row-title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .question_title {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 30px 0 15px;
+      }
+
+      /* Caja FAQ */
+      .faq-box {
+        background: #e9edf5;
+        border-radius: 6px;
+        margin-bottom: 2px;
+        overflow: hidden;
+        border: 1px solid #d0d6e2;
+      }
+
+      /* Botón */
+      .faq-question {
+        width: 100%;
+        text-align: left;
+        padding: 15px 20px;
+        font-size: 16px;
+        border: none;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        color: #003399;
+      }
+
+      /* Icono + */
+      .faq-question::after {
+        content: "+";
+        position: absolute;
+        right: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* Cuando está abierto */
+      .faq-question.active::after {
+        content: "–";
+      }
+
+      /* Respuesta */
+      .faq-answer {
+        display: none;
+        background: #fff;
+        padding: 15px 20px;
+        border-top: 1px solid #d0d6e2;
+      }
+
+      /* Listas */
+      .faq-answer ul {
+        margin: 10px 0;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ul li {
+        position: relative;
+        padding-left: 20px;
+      }
+
+      ul li::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #00339d;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <div class="container text-center mt-4">
+      <h2 class="fw-bold mb-5 text-blue">
+        Preguntas Frecuentes
+        <div class="underline"></div>
+      </h2>
+    </div>
+
+    <div class="container mt-4 mb-4">
+      <h2 class="question_title">Sobre Envíos de dinero</h2>
+
+      <div class="faq-box">
+        <button class="faq-question">¿Cuánto dinero puedo enviar?</button>
+        <div class="faq-answer">
+          Depende del país y el pagador. El mínimo es $10 USD.
+        </div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">
+          ¿En cuánto tiempo se puede recibir un envío?
+        </button>
+        <div class="faq-answer">
+          <ul>
+            <li>Ventanilla: 15 min a 12 horas</li>
+            <li>Depósito: 15 min a 12 horas</li>
+            <li>Domicilio: 3 a 48 horas</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">
+          ¿Puedo saber cuánto me va a costar un envío antes?
+        </button>
+        <div class="faq-answer">Sí, puedes calcularlo antes de enviar.</div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">¿Se puede cancelar un envío?</button>
+        <div class="faq-answer">Sí, si aún no ha sido cobrado.</div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">
+          ¿Cuánto tarda en reflejarse un depósito?
+        </button>
+        <div class="faq-answer">Aproximadamente 60 minutos.</div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">¿Opciones para enviar?</button>
+        <div class="faq-answer">Tarjeta Visa o Mastercard.</div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">
+          ¿Cómo saber si ya recibieron el envío?
+        </button>
+        <div class="faq-answer">SMS o rastreo con clave.</div>
+      </div>
+
+      <h2 class="question_title">Sobre seguridad en Envíos.com</h2>
+
+      <div class="faq-box">
+        <button class="faq-question">¿Política de privacidad?</button>
+        <div class="faq-answer">No compartimos tu información.</div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">¿Quién regula?</button>
+        <div class="faq-answer">FinCEN y reguladores estatales.</div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">¿Mi información está segura?</button>
+        <div class="faq-answer">Sí, usamos SSL.</div>
+      </div>
+
+      <div class="faq-box">
+        <button class="faq-question">¿Enviar dinero a desconocidos?</button>
+        <div class="faq-answer">No, puede ser fraude.</div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="fw-bold mb-4 text-blue text-center">
+        Consejos de seguridad
+        <div class="underline"></div>
+      </h2>
+
+      <div
+        class="tips-box"
+        style="
+          background-color: #eff5ff;
+          padding: 30px;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          box-shadow: 0 9px 18px rgba(0, 0, 0, 0);
+        "
+      >
+        <div class="row">
+          <!-- Columna izquierda -->
+          <div class="col-md-6" style="font-size: 14px; color: #777493">
+            <ul>
+              <li>
+                Nunca envíes dinero a una persona desconocida, o que acabas de
+                conocer en internet. Probablemente busque aprovecharse de tí.
+              </li>
+              <li>
+                Si te piden dinero para reclamar un premio, o la lotería o te
+                dicen que ganaste un concurso al que no entraste, es un fraude.
+              </li>
+              <li>
+                Únicamente proporciona el numero de referencia a tu
+                beneficiario, ya que es tu herramienta de cobro.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="col-md-6" style="font-size: 14px; color: #777493">
+            <ul>
+              <li>
+                No proporciones tu usuario y contraseña de envios.com ya que
+                pueden hacer mal uso de tu información.
+              </li>
+              <li>
+                Confirma con tu beneficiario, que sea realmente la persona a la
+                que le deseas enviar dinero, para evitar falsificación de
+                identidad en el envió.
+              </li>
+              <li>
+                Antes de realizar tu envío verifica que la información que estas
+                ingresando sea la correcta
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+     <section
+      class="section-lg text-center"
+      style="background-color: rgba(145, 191, 255, 0.15)"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-4">
+          <!-- TEXTO -->
+          <div class="col-md-6 text-md-start text-center">
+            <p class="mb-1  fs-2" style="color: #5292ff">
+              ¿Quieres reportar un fraude?
+            </p>
+            <p class="mb-0 text-muted fs-5 text-blue">
+              Ayudamos a reportar cualquier anomalia en nuestro sistema.
+            </p>
+          </div>
+
+          <!-- BOTONES -->
+          <div class="col-md-6 text-md-end text-center">
+        <a href="https://envios.com/open" class="btn btn-primary-custom me-2">REPORTAR</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <script src="js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js "></script>
+
+    <script>
+      const questions = document.querySelectorAll(".faq-question");
+
+      questions.forEach((q) => {
+        q.addEventListener("click", () => {
+          q.classList.toggle("active");
+
+          const answer = q.nextElementSibling;
+          answer.style.display =
+            answer.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+</html>

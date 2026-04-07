@@ -71,19 +71,15 @@
             </p>
           </div>
 
-          <!-- CARD -->
-          <!-- CARD -->
           <div class="col-lg-6 d-flex justify-content-end">
             <div class="card envio-card p-4">
-              <div class="btn-group w-100 mb-3">
-                <button class="btn btn-light active">Enviar Dinero</button>
-                <button class="btn btn-light">Recargas</button>
+              <div class="tabs-custom mb-4">
+                <button class="tab active">Enviar Dinero</button>
+                <button class="tab">Recargas</button>
               </div>
-
               <!-- TU ENVIAS -->
               <div class="mb-3">
                 <label class="form-label small">Tu envías</label>
-
                 <div class="input-group-custom">
                   <input
                     type="number"
@@ -91,7 +87,6 @@
                     class="input-amount"
                     value="10.00"
                   />
-
                   <div class="currency-box">
                     <img
                       src="https://www.envios.com/core/Content/images/flagscircle/USA.svg"
@@ -101,51 +96,62 @@
                   </div>
                 </div>
               </div>
-
               <!-- RECIBE -->
               <div class="mb-3">
-  <label class="form-label small">Beneficiario recibe</label>
-
-  <div class="input-group-custom">
-    <input
-      type="number"
-      id="result"
-      class="input-amount"
-      value="0"
-      readonly
-    />
-
-    <div class="currency-box" id="customSelect">
-      <input type="hidden" id="currencySelectValue" value="0" />
-
-      <div class="selected" id="selectedOption">
-        Selecciona
-      </div>
-
-      <div class="options" id="optionsList"></div>
-    </div>
-  </div>
-</div>
+                <label class="form-label small">Beneficiario recibe</label>
+                <div class="input-group-custom">
+                  <input
+                    type="number"
+                    id="result"
+                    class="input-amount"
+                    value="0"
+                    readonly
+                  />
+                  <div class="currency-box" id="customSelect">
+                    <input type="hidden" id="currencySelectValue" value="0" />
+                    <div class="selected" id="selectedOption">Selecciona</div>
+                    <div class="options" id="optionsList"></div>
+                  </div>
+                </div>
+              </div>
               <!-- TIPO DE CAMBIO -->
               <p class="small text-muted" id="rateText"></p>
-
-              <button class="btn btn-orange w-100">Enviar</button>
+              <a href="https://envios.com/open" class="btn btn-orange w-100"
+                >Enviar</a
+              >
             </div>
           </div>
+
+          <!-- CARD -->
+          <!-- CARD -->
         </div>
       </div>
     </section>
 
     <!-- APP BANNER -->
-    <section class="app-banner text-center py-4">
-      <p class="fw-semibold mb-2 fs-4">¡Descarga nuestra app!</p>
+ <section class="app-banner py-1">
+  <div class="row align-items-center">
+
+    <!-- IZQUIERDA -->
+    <div class="col-6 text-center">
+      <p class="fw-semibold mb-0 fs-3" style="text-align: right;">¡Descarga nuestra app!</p>
+    </div>
+
+    <!-- DERECHA (JUNTAS) -->
+    <div class="col-6 text-left d-flex justify-content-left align-items-center gap-3">
+      
       <a href="">
-        <img src="https://envios.com/lib/img/home/app_store.png" alt="" />
+        <img src="https://envios.com/lib/img/home/app_store.png" width="150" alt="" />
       </a>
+
       <a href="">
-        <img src="https://envios.com/lib/img/home/google_play.png" alt="" />
+        <img src="https://envios.com/lib/img/home/google_play.png" width="150" alt="" />
       </a>
-    </section>
+
+    </div>
+
+  </div>
+</section>
 
     <!-- FEATURES -->
     <section class="section-lg bg-light text-center">
@@ -209,7 +215,9 @@
         </p>
 
         <!-- CTA -->
-        <a href="#" class="btn btn-outline-orange mb-5"> Ver más </a>
+        <a href="https://envios.com/open" class="btn btn-outline-orange mb-5">
+          Ver más
+        </a>
 
         <!-- MAPA -->
         <div class="mb-5">
@@ -338,13 +346,24 @@
           </div>
 
           <!-- BOTONES -->
-          <div class="col-md-5 text-md-end text-center">
-            <button class="btn btn-primary-custom me-2">CREA TU CUENTA</button>
-            <button class="btn btn-outline-primary-custom">CONTÁCTANOS</button>
+          <div class="col-md-6 text-md-end text-center">
+        <a href="/registro" class="btn btn-primary-custom me-2">CREA TU CUENTA</a>
+
+<a href="/contacto" class="btn btn-outline-primary-custom">CONTÁCTANOS</a>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <p>Bienvenido 👋</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <div id="footer"></div>
@@ -355,6 +374,11 @@
   </body>
 
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = new bootstrap.Modal(document.getElementById("imgModal"));
+      modal.show();
+    });
+
     const swiper = new Swiper(".mySwiper ", {
       loop: true,
       navigation: {
@@ -394,6 +418,15 @@
       });
     }
 
+    document.querySelectorAll(".tab").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document
+          .querySelectorAll(".tab")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+      });
+    });
+
     // 🔥 FETCH SEGURO (con fallback)
     async function loadData() {
       try {
@@ -432,9 +465,7 @@
 
         fillSelect();
         updateUI();
-      } catch (error) {
-        console.error("ERROR TOTAL:", error);
-      }
+      } catch (error) {}
     }
 
     // 🎯 SELECT

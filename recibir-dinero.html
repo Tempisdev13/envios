@@ -1,148 +1,149 @@
 <!doctype html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>envios.com</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Carousel -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div id="header"></div>
 
-
-
-
-
-
     <div class="container main-container">
+      <!-- Título -->
+      <h1 class="title">Rastrear Envío</h1>
+      <p class="subtitle">
+        Consulta el estatus de un envío, ingresa el código de reclamo:
+      </p>
 
-        <!-- Título -->
-        <h1 class="title">Rastrear Envío</h1>
-        <p class="subtitle">Consulta el estatus de un envío, ingresa el código de reclamo:</p>
+      <!-- Formulario -->
+      <div class="search-box">
+        <div class="row">
+          <div class="col-sm-4">
+            <label>Num. de Rastreo</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-sm-4">
+            <label>Apellido Paterno (Beneficiario)</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-sm-4 btn-container">
+            <button class="btn btn-primary btn-search">Buscar</button>
+          </div>
+        </div>
+      </div>
 
-        <!-- Formulario -->
-        <div class="search-box">
-            <div class="row">
-                <div class="col-sm-4">
-                    <label>Num. de Rastreo</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="col-sm-4">
-                    <label>Apellido Paterno (Beneficiario)</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="col-sm-4 btn-container">
-                    <button class="btn btn-primary btn-search">Buscar</button>
-                </div>
-            </div>
+      <hr />
+
+      <!-- Info iconos -->
+      <div class="row info-section">
+        <div class="col-sm-4 text-center">
+          <div class="icon">📱</div>
+          <h4>Confirma que tu envío esté listo.</h4>
+          <p>
+            Confirma con tus familiares de EUA, que el envío se realizó con
+            éxito y pide tu clave de confirmación.
+          </p>
         </div>
 
-        <hr>
-
-        <!-- Info iconos -->
-        <div class="row info-section">
-
-            <div class="col-sm-4 text-center">
-                <div class="icon">📱</div>
-                <h4>Confirma que tu envío esté listo.</h4>
-                <p>Confirma con tus familiares de EUA, que el envío se realizó con éxito y pide tu clave de confirmación.</p>
-            </div>
-
-            <div class="col-sm-4 text-center">
-                <div class="icon">💳</div>
-                <h4>Si tu envío lo tienes que recoger en sucursal no olvides tu ID.</h4>
-                <p>Envía la cantidad que quieras sobre $30 dlls y tu dinero será entregado con seguridad a quien tu elijas.</p>
-            </div>
-
-            <div class="col-sm-4 text-center">
-                <div class="icon">💬</div>
-                <h4>Listo, notifica a tu familia que ya fue cobrado tu envío.</h4>
-                <p>En minutos, la transferencia se puede ya cobrar.</p>
-            </div>
-
+        <div class="col-sm-4 text-center">
+          <div class="icon">💳</div>
+          <h4>
+            Si tu envío lo tienes que recoger en sucursal no olvides tu ID.
+          </h4>
+          <p>
+            Envía la cantidad que quieras sobre $30 dlls y tu dinero será
+            entregado con seguridad a quien tu elijas.
+          </p>
         </div>
 
-        <hr>
+        <div class="col-sm-4 text-center">
+          <div class="icon">💬</div>
+          <h4>Listo, notifica a tu familia que ya fue cobrado tu envío.</h4>
+          <p>En minutos, la transferencia se puede ya cobrar.</p>
+        </div>
+      </div>
 
-        <!-- Países -->
-        <h2 class="coverage-title">Países de cobertura</h2>
-        <p class="coverage-subtitle">Dinos dónde te encuentras para mostrarte las opciones disponibles de tu país:</p>
+      <hr />
 
-        <div class="country-box">
-            <select class="form-control">
-            <option>Selecciona tu país</option>
-            <option>México</option>
-            <option>Estados Unidos</option>
+      <!-- Países -->
+      <h2 class="coverage-title">Países de cobertura</h2>
+      <p class="coverage-subtitle">
+        Dinos dónde te encuentras para mostrarte las opciones disponibles de tu
+        país:
+      </p>
+
+      <div class="country-box">
+        <select class="form-control">
+          <option>Selecciona tu país</option>
+          <option>México</option>
+          <option>Estados Unidos</option>
         </select>
-        </div>
-
+      </div>
     </div>
 
+    <section
+      class="section-lg text-center"
+      style="background-color: rgba(145, 191, 255, 0.15)"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-4">
+          <!-- TEXTO -->
+          <div class="col-md-5 text-md-start text-center">
+            <p class="mb-1 fw-semibold fs-2" style="color: #5292ff">
+              ¿Listo para enviar dinero?
+            </p>
+            <p class="mb-0 text-muted fs-4 text-blue">
+              Crea una cuenta ó contáctanos.
+            </p>
+          </div>
 
-
-
-
-
-
-
-    <section class="section-lg text-center" style="background-color: rgba(145, 191, 255, 0.15);">
-
-        <div class="container">
-
-            <div class="row justify-content-center align-items-center g-4">
-
-                <!-- TEXTO -->
-                <div class="col-md-5 text-md-start text-center">
-                    <p class="mb-1 fw-semibold fs-2" style="color: #5292FF;">
-                        ¿Listo para enviar dinero?
-                    </p>
-                    <p class="mb-0 text-muted fs-4 text-blue">
-                        Crea una cuenta ó contáctanos.
-                    </p>
-                </div>
-
-                <!-- BOTONES -->
-                <div class="col-md-5 text-md-end text-center">
-                    <button class="btn btn-primary-custom me-2">
-          CREA TU CUENTA
-        </button>
-                    <button class="btn btn-outline-primary-custom">
-          CONTÁCTANOS
-        </button>
-                </div>
-
-            </div>
-
+          <!-- BOTONES -->
+          <div class="col-md-5 text-md-end text-center">
+            <button class="btn btn-primary-custom me-2">CREA TU CUENTA</button>
+            <button class="btn btn-outline-primary-custom">CONTÁCTANOS</button>
+          </div>
         </div>
-
+      </div>
     </section>
     <div id="footer"></div>
     <script src="js/include.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js "></script>
-</body>
+  </body>
 
-<script>
+  <script>
     const swiper = new Swiper(".mySwiper ", {
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next ",
-            prevEl: ".swiper-button-prev ",
-        },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next ",
+        prevEl: ".swiper-button-prev ",
+      },
     });
-</script>
-
+  </script>
 </html>

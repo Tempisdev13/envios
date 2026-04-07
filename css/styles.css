@@ -2,6 +2,33 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+
+.nav-link {
+    color: #002266 !important;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #FF8100;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #002266; /* mantiene el color */
+}
+
 .contact-section {
     padding: 60px 0;
     background: #f5f6f8;
@@ -99,7 +126,7 @@ body {
 /* COLORS */
 
 .text-orange {
-    color: #ff8c00;
+    color: #FF8100;
 }
 
 .text-blue {
@@ -107,11 +134,11 @@ body {
 }
 
 .btn-orange {
-    background: #ff8c00;
+    background: #FF8100;
     color: white;
     border: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .btn-orange:hover {
@@ -119,14 +146,14 @@ body {
 }
 
 .btn-outline-orange {
-    border: 2px solid #ff8c00;
-    color: #ff8c00;
+    border: 2px solid #FF8100;
+    color: #FF8100;
     font-weight: 600;
     font-size: 18px;
 }
 
 .btn-outline-orange:hover {
-    background: #ff8c00;
+    background: #FF8100;
     color: white;
 }
 
@@ -405,7 +432,7 @@ body {
     padding: 10px 22px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .btn-primary-custom:hover {
@@ -419,7 +446,7 @@ body {
     padding: 10px 22px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .btn-outline-primary-custom:hover {
@@ -456,7 +483,7 @@ body {
 }
 
 #footer a:hover {
-    color: #ff8c00;
+    color: #FF8100;
 }
 
 
@@ -505,7 +532,7 @@ body {
 }
 
 .social-menu a:hover {
-    background: #ff8c00;
+    background: #FF8100;
 }
 
 
@@ -733,4 +760,43 @@ body {
         margin-top: 30px;
         width: 100%;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.tabs-custom {
+    display: flex;
+    background: #dcdcdc;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tabs-custom .tab {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+/* ACTIVO (como tu imagen) */
+.tabs-custom .tab.active {
+    background: #bfbfbf;
+}
+
+/* EFECTO HOVER SUAVE */
+.tabs-custom .tab:hover {
+    background: #cfcfcf;
 }
