@@ -134,27 +134,27 @@ body {
 }
 
 .btn-orange {
-    background: #FF8100;
-    color: white;
+    background: #FF8100!important;
+    color: white!important;
     border: none;
     font-weight: 600;
     font-size: 16px;
 }
 
 .btn-orange:hover {
-    background: #e67e00;
+    background: #e67e00!important;
 }
 
 .btn-outline-orange {
-    border: 2px solid #FF8100;
-    color: #FF8100;
-    font-weight: 600;
-    font-size: 18px;
+    border: 2px solid #FF8100!important;
+    color: #FF8100!important;
+    font-weight: 600!important;
+    font-size: 18px!important;
 }
 
 .btn-outline-orange:hover {
-    background: #FF8100;
-    color: white;
+    background: #FF8100!important;
+    color: white!important;
 }
 
 
@@ -426,31 +426,31 @@ body {
 }
 
 .btn-primary-custom {
-    background-color: #0c2d6b;
-    color: white;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 18px;
+    background-color: #0c2d6b !important;
+    color: white!important;
+    border: none!important;
+    padding: 10px 22px!important;
+    border-radius: 6px !important;
+    font-weight: 600!important;
+    font-size: 18px!important;
 }
 
 .btn-primary-custom:hover {
-    background-color: #082052;
-    color: white;
+    background-color: #082052!important;
+    color: white!important;
 }
 
 .btn-outline-primary-custom {
-    background: white;
-    color: #0c2d6b;
-    padding: 10px 22px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 18px;
+    background: white!important;
+    color: #0c2d6b!important;
+    padding: 10px 22px!important;
+    border-radius: 6px!important;
+    font-weight: 600!important;
+    font-size: 18px!important;
 }
 
 .btn-outline-primary-custom:hover {
-    background: rgb(250, 250, 250);
+    background: rgb(250, 250, 250)!important;
 }
 
 
