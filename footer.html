@@ -1,84 +1,207 @@
-<footer id="footer" class="container-fluid">
-    <div class="container">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="row">
+<title>Footer Responsive</title>
 
-            <!-- CONTACTO -->
-            <div class="col-md-3 mb-4">
-                <div class="address-holder">
-                    <div class="phone">
-                        <i class="fa fa-phone"></i>
-                        <a href="tel:+18665368467">1-866-536-8467</a>
-                    </div>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-                    <div class="email">
-                        <i class="fa fa-envelope"></i>
-                        <a href="mailto:info@envios.com">info@envios.com</a>
-                    </div>
+<!-- FontAwesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-                    <div class="address">
-                        <i class="fa fa-map-marker"></i> 5851 San Felipe St. Ste 400 Houston, TX
-                    </div>
-                </div>
-            </div>
+<style>
 
-            <!-- MENU -->
-            <div class="col-md-3 mb-4">
-                <h4>Envios.com</h4>
-                <ul class="footer-menu">
-                    <li><a href="/recibir-dinero.html">¿Cómo Recibir dinero?</a></li>
-                    <li><a href="/index.html">¿Cómo Enviar dinero?</a></li>
-                    <li><a href="/recibir-dinero.html">Países de cobertura</a></li>
-                    <li><a href="/nosotros.html">Nosotros</a></li>
-                    <li><a href="/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+/* ===== FOOTER ===== */
+#footer {
+    background: #003399;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
 
-            <!-- AYUDA -->
-            <div class="col-md-3 mb-4">
-                <h4>Ayuda</h4>
-                <ul class="footer-menu">
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Consejos de seguridad</a></li>
-                    <li><a href="#">Cumplimiento</a></li>
-                    <li><a href="#">Resolución de errores</a></li>
-                    <li><a href="#">Presentar una Queja</a></li>
-                </ul>
-            </div>
+#footer a {
+    color: white;
+    text-decoration: none;
+}
 
-            <!-- HORARIO -->
-            <div class="col-md-2 mb-4">
-                <h4>Contáctanos</h4>
-                <ul class="footer-menu">
-                    <li><strong>Lunes - Domingo</strong></li>
-                    <li>7:30 am - 11:30 pm</li>
-                    <li class="small">*Hablamos inglés y español</li>
-                </ul>
-            </div>
+#footer a:hover {
+    text-decoration: underline;
+}
 
-            <!-- REDES -->
-            <div class="col-md-1 d-flex align-items-start justify-content-md-end justify-content-center">
-                <div class="social-menu-holder">
-                    <ul class="social-menu">
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i>     </a></li>
-                    </ul>
-                </div>
-            </div>
+/* títulos */
+#footer h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
 
+/* listas */
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* contacto */
+.address-holder div {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.address-holder i {
+    margin-right: 8px;
+}
+
+/* redes */
+.social-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-menu li a {
+    font-size: 18px;
+}
+
+/* copyright */
+.rights_text {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+
+    #footer .row > div {
+        text-align: center;
+    }
+
+    .social-menu {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #footer {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    #footer h4 {
+        margin-top: 20px;
+    }
+
+    .address-holder {
+        margin-bottom: 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+
+<div class="container">
+
+<div class="row">
+
+<!-- CONTACTO -->
+<div class="col-md-3 mb-4">
+    <div class="address-holder">
+        <div>
+            <i class="fa fa-phone"></i>
+            <a href="tel:+18665368467">1-866-536-8467</a>
         </div>
 
-        <!-- COPYRIGHT -->
-        <div class="row mt-4">
-            <div class="col-12 text-center">
-                <p class="rights_text ng-binding ">Envios.com | © 2026 Envios.com. Todos los Derechos Reservados. NMLS ID #938353 - <a href=" ">Términos de uso</a> - <a href=" ">Aviso de Privacidad</a><br>Envios.com es un servicio de Kwik Dollar LLC, un transmisor de dinero autorizado.
-                </p>
-
-
-
-            </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:info@envios.com">info@envios.com</a>
         </div>
 
+        <div>
+            <i class="fa fa-map-marker-alt"></i>
+            5851 San Felipe St. Ste 400 Houston, TX
+        </div>
     </div>
+</div>
+
+<!-- MENU -->
+<div class="col-md-3 mb-4">
+    <h4>Envios.com</h4>
+    <ul class="footer-menu">
+        <li><a href="/recibir-dinero.html">¿Cómo Recibir dinero?</a></li>
+        <li><a href="https://envios.com/open">¿Cómo Enviar dinero?</a></li>
+        <li><a href="/recibir-dinero.html">Países de cobertura</a></li>
+        <li><a href="/nosotros.html">Nosotros</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+    </ul>
+</div>
+
+<!-- AYUDA -->
+<div class="col-md-3 mb-4">
+    <h4>Ayuda</h4>
+    <ul class="footer-menu">
+        <li><a href="/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+        <li><a href="/preguntas_frecuentes.html">Consejos de seguridad</a></li>
+        <li><a href="/complaint.html">Cumplimiento</a></li>
+        <li><a href="/error-resolution.html">Resolución de errores</a></li>
+        <li><a href="/file-a-complaint.html">Presentar una Queja</a></li>
+    </ul>
+</div>
+
+<!-- HORARIO -->
+<div class="col-md-2 mb-4">
+    <h4>Contáctanos</h4>
+    <ul class="footer-menu">
+        <li><strong>Lunes - Domingo</strong></li>
+        <li>7:30 am - 11:30 pm</li>
+        <li style="font-size:12px;">*Hablamos inglés y español</li>
+    </ul>
+</div>
+
+<!-- REDES -->
+<div class="col-md-1 d-flex align-items-start justify-content-md-end justify-content-center">
+    <ul class="social-menu">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+</div>
+
+</div>
+
+<!-- COPYRIGHT -->
+<div class="row">
+    <div class="col-12 text-center">
+        <p class="rights_text">
+            Envios.com | © 2026 Envios.com. Todos los Derechos Reservados. NMLS ID #938353 -
+            <a href="#">Términos de uso</a> -
+            <a href="#">Aviso de Privacidad</a><br>
+            Envios.com es un servicio de Kwik Dollar LLC, un transmisor de dinero autorizado.
+        </p>
+    </div>
+</div>
+
+</div>
+
 </footer>

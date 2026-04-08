@@ -1,13 +1,89 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5 p-4">
-    <a href="/index.html"><img src="https://envios.com/lib/images/logo_orange.svg" alt="" style="width: 170px;"></a>
+<style>
+    /* Por defecto (desktop) */
+.logo-mobile {
+    display: none;
+}
 
-    <div class="ms-auto d-flex align-items-center gap-3">
-        <a href="https://envios.com/open" class="nav-link">Enviar Dinero</a>
-        <a href="https://envios.com/open" class="nav-link">Recargas</a>
-        <a href="https://envios.com/open" class="nav-link">Recibir Dinero</a>
-        <a href="https://envios.com/open" class="nav-link">Ayuda</a>
-        <a href="https://envios.com/open" class="nav-link">Ingresar</a>
-        <a href="https://envios.com/open" class="btn btn-orange">Regístrate</a>
+  @media (max-width: 991px) {
+
+     .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+    /* 🔵 lo tuyo (se queda igual) */
+    .navbar.bg-white {
+    background: linear-gradient(to bottom, #00236b, #003399);
+    }
+
+    .navbar.bg-white .navbar-toggler {
+        border-color: white;
+    }
+
+    .navbar.bg-white .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    .navbar.bg-white .nav-link {
+        color: white !important;
+    }
+
+    .navbar.bg-white .btn-orange {
+        color: white;
+        background-color: #ff8100;
+    }
+
+    /* 👇 NUEVO: centrado */
+    .navbar.bg-white .d-lg-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* 👇 NUEVO: padding y alineación */
+    .navbar.bg-white .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    /* 👇 NUEVO: botón centrado */
+    .navbar.bg-white .btn-orange {
+        margin-top: 10px;
+    }
+
+    /* 👇 NUEVO: espacio general */
+    .navbar.bg-white .navbar-collapse {
+        padding: 20px 0;
+    }
+}
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+
+    <a class="navbar-brand" href="#">
+    <img src="https://envios.com/lib/images/logo_orange.svg" class="logo-desktop" width="150">
+    <img src="https://envios.com/lib/images/logo_white.svg" class="logo-mobile" width="150">
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuNav">
+        <div class="ms-auto d-lg-flex align-items-center gap-3">
+
+            <a href="#" class="nav-link">Enviar Dinero</a>
+            <a href="#" class="nav-link">Recargas</a>
+            <a href="#" class="nav-link">Recibir Dinero</a>
+            <a href="#" class="nav-link">Ayuda</a>
+            <a href="#" class="nav-link">Ingresar</a>
+
+            <a href="#" class="btn btn-orange">Regístrate</a>
+
+        </div>
     </div>
-</nav>
 
+</nav>

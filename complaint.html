@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>envios.com</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .aviso-section {
+            background: #f5f7fb;
+            padding: 50px 20px;
+            font-family: Arial;
+            color: #003399;
+            width: 60%;
+            margin: 0 auto;
+            /* 🔥 esto lo centra */
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .titulo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .accordion .item {
+            margin-bottom: 10px;
+            border: 1px solid #d9e1f2;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .btn-acc {
+            width: 100%;
+            background: #eaf1ff;
+            border: none;
+            padding: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .btn-acc::after {
+            content: "+";
+            position: absolute;
+            right: 15px;
+        }
+
+        .btn-acc.active::after {
+            content: "–";
+        }
+
+        .contenido {
+            display: none;
+            background: white;
+            padding: 15px;
+        }
+
+        /* 📱 Pantallas pequeñas */
+        @media (max-width: 768px) {
+            .aviso-section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- SECCIÓN ESPECIALES -->
+    <section class="especiales container text-center">
+        <h2 class="section-title">Reclamos</h2>
+    </section>
+
+    <section class="aviso-section">
+        <div class="container">
+            <h2 class="titulo">AVISO</h2>
+
+            <p class="subtitulo">
+                Si usted tiene un reclamo, primero contacte el departamento de
+                servicio al cliente de:
+            </p>
+
+            <p class="empresa">Kwik Dollar LLC – Envios.com</p>
+            <p class="telefono">Línea Gratuita 1-866-536-8467</p>
+
+            <p class="descripcion">
+                Si usted aún tiene un reclamo sin resolver respecto a su envío de
+                dinero, por favor dirija su reclamo a:
+            </p>
+
+            <div class="accordion">
+                <!-- CALIFORNIA -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de California</button>
+                    <div class="contenido">
+                        <p class="p5 complaint_cal_content ng-binding" style="text-align: justify; margin-bottom: 2px">
+                            Si tiene alguna queja con respecto a cualquier aspecto de las
+                            actividades de transferencia de fondos realizadas en esta
+                            localidad, puede comunicarse con
+                            <strong class="ng-binding">
+                                California Department of Financial Protection and Innovation
+                                (DFPI)</strong>
+                            en su número de teléfono gratuito<strong><a href="tel:+18662752677">
+                                    1-866-275-2677</a></strong>, por correo electrónico a
+                            <strong><a
+                                    href="mailto:consumer.services@dbo.ca.gov">consumer.services@dbo.ca.gov</a></strong>,
+                            o por correo al Department of Financial Protection and
+                            Innovation, Servicios al Consumidor, 2101 Arena Boulevard,
+                            Sacramento, CA 95834.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TEXAS -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de Texas</button>
+                    <div class="contenido">
+                        <h3 class="p6 ng-binding" style="text-align: center">
+                            Texas Department of Banking
+                        </h3>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            2601 North Lamar Boulevard – Suite 300
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Austin, Texas 78705 - 4294
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Teléfono:
+                            <strong><a href="tel:+18772765554">1-877-276-5554</a> </strong>
+                            (línea gratuita)
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Fax: 512-475-1313
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            E-mail:
+                            <a href="mailto:consumer.complaints@dob.texas.gov">consumer.complaints@dob.texas.gov</a>
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Pagina Web:
+                            <a href="https://dob.texas.gov/" target="_blank">www.dob.texas.gov</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- MARYLAND -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de Maryland</button>
+                    <div class="contenido">
+                        <h3 class="p6 ng-binding" style="text-align: center">
+                            MARYLAND OFFICE OF THE COMMISSIONER OF FINANCIAL REGULATION
+                        </h3>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            EN LINEA:
+                            <a href="https://www.dllr.state.md.us/" target="_blank">www.dllr.state.md.us</a>
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Teléfono:
+                            <strong><a href="tel:+8887840136">888-784-0136</a> </strong>
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Por correo:
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Office of the Commissioner of Financial Regulation Attention:
+                            Complaint Unit 500 North Calvert Street, Suite 402 Baltimore, MD
+                            21202
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Maryland Consumer Compliant Notice: The Commissioner of
+                            Financial Regulation for the State of Maryland will accept all
+                            questions or complaints from Maryland residents regarding Kwik
+                            Dollar LLC DBA Dinex, Envios.com, NMLS ID 938353 at 500 N.
+                            Calvert St., Ste. 402, Baltimore, MD 21202 or (888) 784-0136.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ARKANSAS -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de Arkansas</button>
+                    <div class="contenido">
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Después de comunicarse por primera vez con Kwik Dollar LLC DBA
+                            Dinex, Envios.com, si aún tiene una queja sin resolver con
+                            respecto a la actividad de transmisión de dinero de la empresa,
+                            dirija su queja al Arkansas Securities Department a:
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Heritage West Building, Suite 300
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            201 East Markham Street
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Little Rock, Arkansas 72201-1692
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Telephone Number: (501) 324-9260
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Toll Free: (800) 981-4429
+                        </p>
+                    </div>
+                </div>
+
+                <!-- COLORADO -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de Colorado</button>
+                    <div class="contenido">
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Entidades diferentes a aquellas instituciones financieras
+                            aseguradas por el FDIC, que dirigen actividades de envío de
+                            dinero en Colorado, incluyendo venta de giros postales, giro de
+                            fondos e instrumentos de pago o crédito requieren tener licencia
+                            de la División Bancaria del Estado de Colorado de acuerdo con el
+                            Acto de Transmisores de Dinero, Título 11, Artículo 110, del
+                            Estatuto Revisado de Colorado.
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Si usted tiene una pregunta o duda acerca DE SU TRASACCIÓN - DEL
+                            DINERO QUE ENVIÓ
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Por favor póngase en contacto con el agente de envíos monetarios
+                            que procesó su transacción para obtener ayuda. La División
+                            Bancaria de Colorado no tiene acceso a esta información.
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Si usted es un residente del estado de Colorado y tiene una
+                            queja sobre EL AGENTE DE ENVIÓS MONETARIOS – LA COMPAÑÍA QUE
+                            ENVIÓ SU DINERO
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Todas las quejas deben de ser entregadas por escrito. Por favor
+                            llene la forma de quejas que se encuentra en el sitio web de la
+                            División Bancaria de Colorado y entrégue la forma junto con los
+                            documentos que apoyen su queja por correo o por correo
+                            electrónico a la División Bancaria de Colorado al:
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Colorado Division of Banking, 1560 Broadway, Suite 975, Denver,
+                            Colorado 80202
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            correo electrónico: DORA_BankingWebsite@state.co.us
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            sitio web: banking.colorado.gov/industry/money-transmitters
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Sección 11-110-120, C.R.S. requiere que agentes de envíos
+                            monetarios y compañías de giros postales coloquen este anuncio
+                            en un lugar visible, notorio y alumbrado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WASHINGTON -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de Washington</button>
+                    <div class="contenido">
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Las quejas relacionadas con la transmisión de dinero (incluido
+                            el tipo de cambio) pueden presentarse ante el Departamento de
+                            Instituciones Financieras del Estado de Washington mediante
+                            cualquiera de los métodos siguientes:
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            CSEnforceComplaints@dfi.wa.gov
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Online: http://www.dfi.wa.gov
+                        </p>
+                    </div>
+                </div>
+
+                <!-- NEW YORK -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de New York</button>
+                    <div class="contenido">
+                        <h3 class="p6 ng-binding" style="text-align: center">
+                            New York Department of Financial Services
+                        </h3>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Consumer Services Division
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            One State Street
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            New York, NY 10004-1417
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            1.877.226.5697
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            http://www.dfs.ny.gov
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            By mail:
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            New York State Department of Financial Services
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Consumer Services Division
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            One State Street
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            New York, NY 10004-1417
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WISCONSIN -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de Wisconsin</button>
+                    <div class="contenido">
+                        <h3 class="p6 ng-binding" style="text-align: center">
+                            Wisconsin Department of Financial Institutions
+                        </h3>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            En línea: http://www.wdfi.org
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Teléfono: 800-452-3328 608-261-7578
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Fax: (608) 264-7968
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Por Correo:
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Department of Financial Institutions Bureau of Consumer Affairs
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            PO Box 8041
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Madison, WI 53708-804
+                        </p>
+                    </div>
+                </div>
+
+                <!-- MISSOURI -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de Missouri</button>
+                    <div class="contenido">
+                        <h3 class="p6 ng-binding" style="text-align: center">
+                            Missouri Division of Finance
+                        </h3>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            En línea: http://www.finance.mo.gov
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Teléfono: 573-751-3242
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Fax: 573-751-9192
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Por Correo:
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Missouri Division of Finance
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            P.O. Box 716
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Jefferson City, MO 65102-0716
+                        </p>
+                    </div>
+                </div>
+
+                <!-- NEBRASKA -->
+                <div class="item">
+                    <button class="btn-acc">Consumidor de Nebraska</button>
+                    <div class="contenido">
+                        <h3 class="p6 ng-binding" style="text-align: center">
+                            Nebraska Department of Banking &amp; Finance
+                        </h3>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            En línea: http://www.ndbf.ne.gov
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Teléfono: 402-471-2171
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Fax:
+                        </p>
+                        <p class="p5" style="text-align: center; margin-bottom: 2px">
+                            <br />
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Por Correo:
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Nebraska Department of Banking &amp; Finance Financial
+                            Institutions – Complaints
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            P.O. Box 95006
+                        </p>
+                        <p class="p5 ng-binding" style="text-align: center; margin-bottom: 2px">
+                            Lincoln, Nebraska 68509-5006
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const buttons = document.querySelectorAll(".btn-acc");
+
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                // cerrar todos
+                buttons.forEach((b) => {
+                    b.classList.remove("active");
+                    b.nextElementSibling.style.display = "none";
+                });
+
+                // abrir el actual
+                btn.classList.add("active");
+                btn.nextElementSibling.style.display = "block";
+            });
+        });
+    </script>
+</body>
+
+</html>
