@@ -157,6 +157,19 @@ body {
     color: white!important;
 }
 
+.btn-descargar {
+  background-color: #FF8100!important;
+  color: white!important;
+  border-radius: 8px!important;
+  padding: 10px 20px!important;
+  font-weight: 600!important;
+  text-decoration: none!important;
+}
+
+.btn-descargar:hover {
+  background-color: #e67300!important;
+  color: white!important;
+}
 
 /* HERO */
 
